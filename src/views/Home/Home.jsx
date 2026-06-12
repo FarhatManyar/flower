@@ -1,10 +1,12 @@
 import './Home.css';
+import Navbar from "../../components/Navbar/Navbar";
 
 function Home() {
   return (
-    <div className="home">
+    <div>
+<Navbar/>
       <h1>Welcome to Our Flower Shop</h1>
-      <p>Explore our beautiful collection of fresh flowers.</p>
+    
     </div>
   );
 }
