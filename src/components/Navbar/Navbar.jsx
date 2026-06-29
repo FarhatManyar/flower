@@ -31,18 +31,18 @@ const NavConfig = [
 
 function Navbar({active}) {
   return (
-   <div className="navbar">
-    {
-      NavConfig.map((menuItem)=>{
-        return(
-          <Link to={menuItem.path} className={`menu-item ${active == menuItem.name ? "active-menu" : ""}`}>
-            {menuItem.icon} 
-            {menuItem.title}
-          </Link>
-        );
-      
-      })}
-   </div>
-    );
+    <div className="navbar">
+      {NavConfig.map((menuItem) => (
+        <Link
+          key={menuItem.name}
+          to={menuItem.path}
+          className={`menu-item ${active === menuItem.name ? "active-menu" : ""}`}
+        >
+          {menuItem.icon}
+          {menuItem.title}
+        </Link>
+      ))}
+    </div>
+  );
 }
 export default Navbar;

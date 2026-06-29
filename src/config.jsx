@@ -7,6 +7,7 @@ import img5 from "./assets/flower5.png";
 import img6 from "./assets/flower6.png"; 
 import img7 from "./assets/flower7.png";
 import img8 from "./assets/flower8.png";
+import { Truck, UserRoundPen, PartyPopper, Gift, Wand, Rose, Sparkles, Clock, Flower2, CalendarDays } from "lucide-react";
 
 
 
@@ -77,4 +78,74 @@ const PRODUCTS=[
 }
 
 ];
- export { PRODUCTS };
+
+const OUR_SERVICES = [
+  {
+    id: 1,    
+    title: "Flower Delivery",
+    description: "We offer reliable and timely flower delivery services to ensure your loved ones receive their blooms on time.",
+    icon:<Truck height={"70px"}  width={"70px"}/>,
+  },
+
+  {
+    id: 2,
+    title: "Custom Arrangements",
+    description: "Our skilled florists can create custom flower arrangements tailored to your preferences and occasions.",
+    icon:<UserRoundPen height={"70px"}  width={"70px"}/>,
+  },
+  {
+    id: 3,  
+  title: "Event Decoration",
+  description: "We provide professional event decoration services, transforming venues with beautiful floral designs.",
+  icon:<PartyPopper height={"70px"}  width={"70px"}/>,
+  },
+{
+  id: 4,
+  title: "Gift Wrapping",
+  description: "We offer elegant gift wrapping services to make your flower gifts even more special and memorable.",
+  icon:<Gift height={"70px"}  width={"70px"}/>,
+},
+{
+ id: 5,
+  title: "Custom Design",
+  description: "We offer custom floral design services to create unique arrangements that reflect your personal style and preferences.",
+  icon:<Wand height={"70px"}  width={"70px"}/> 
+},
+{
+  id: 6,
+  title:"Floral Consultation",
+  description: "Our experienced florists provide personalized floral consultations to help you choose the perfect flowers for any occasion.",
+  icon:<Rose height={"70px"}  width={"70px"}/>
+},
+{
+  id: 7,
+  title: "Floral Care Advice",
+  description: "Get expert care tips and aftercare instructions to keep your flowers fresh and beautiful for longer.",
+  icon:<Sparkles height={"70px"} width={"70px"} />
+},
+{
+  id: 8,
+  title: "Same-Day Pickup",
+  description: "Order by midday and pick up your fresh flowers the same day from our store.",
+  icon:<Clock height={"70px"} width={"70px"} />
+},
+{
+  id: 9,
+  title: "Seasonal Bouquets",
+  description: "Choose from our rotating selection of seasonal bouquets, curated for every time of year.",
+  icon:<Flower2 height={"70px"} width={"70px"} />
+},
+{
+  id: 10,
+  title: "Subscription Plans",
+  description: "Enjoy regular flower deliveries with our flexible subscription plans for home or office.",
+  icon:<CalendarDays height={"70px"} width={"70px"} />
+}
+
+];
+
+ export { PRODUCTS, OUR_SERVICES };
+
+
+
+ 
